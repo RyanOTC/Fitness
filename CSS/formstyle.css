@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+.form1 {
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: pink;
+    margin: 5px;
+    width: 20px
+    background:white;
+    padding:25px;
+    border-radius: 6.5px
+}
+.form1 {
+  display: -webkit-flex;
+  display:flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow:row wrap;
+}
+.form1 > fieldset {
+  background-color: rgb(241, 232, 181);
+  border-radius:20px;
+  -webkit-flex-:1 1 300px;
+  flex:1 1 300px;
+  font-size: 0.85em;
+  padding:10px;
+  margin:10px;
+}
+
+div.form1 {
+  display:-webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow:row wrap;
+  margin:7px 0px;
+}
+div.form1> * {
+  -webkit-flex: 1 1 150px;
+  flex: 1 1 150px;
+}
+
+/* Legend Styles */
+legend {
+  background-color: rgb(179, 20, 25);
+  color: white;
+  padding: 5px;
+}
