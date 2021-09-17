@@ -12,34 +12,50 @@ html{
 body {
  background-color: purple;
 }
+#fit{
+  display: flex;
+  justify-content: center;
+}
 
 .fitOnPic {
- background-image: url("fit1.jpg");
+ background-image: url("../images/fit1.jpg");
  min-height: 250px;
  background-size: cover;
  background-position: center;
  font-family: cursive;
- color: white;
+ color: purple;
  font-size: 3em;
- text-shadow: 5px 5px 20px pink, -5px -10px 5px #eee;
+ text-shadow: 5px 5px 30px pink, -5px -10px 5px #eee;
  text-align: center;
 }
+p {
+  color:  rgb(255,50,151);
+  text-align: center;
+  font-size: 2em;
+}
 
-ul#linktabs {
+nav#linktabs {
 
 
   font-size: 1.5em;
   font-stretch: expanded;
+  word-spacing: 20px;
 
-  letter-spacing: 5px;
+  letter-spacing: 15px;
   line-height: 2em;
   color: Yellow;
   background-color: purple;
   text-align: center;
 }
 ul#linktabs a:link, nav> ul> li > a:visited{
-color: rgb(151,151,151);
+color: rgb(255,50,151);
 text-decoration:none;}
 ul#linktabs a:hover, nav > ul > li > a:active {
-  color: #ffff33;
+  color: white;
     text-decoration: underline;}
+footer {
+  font-size: 3em;
+  color:yellow;
+  text-align:center;
+  background-color:pink;
+}

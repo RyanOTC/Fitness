@@ -1,46 +1,91 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link href ="../CSS/style.css" rel="stylesheet" />
-    <link href ="../CSS/formstyle.css" rel="stylesheet" />
-    
-    <title></title>
-  </head>
-  <body>
-    <nav id="linktabs">
-      <ul>
-         <li><a href="index.html">Home</a></li>
-         <li><a href="info.html">Info</a></li>
-         <li><a href="classes.html">Classes</a></li>
-      </ul>
-      <div class="form1">
-          <form method="get" action="thankyou.html">
-            <fieldset>
-              <legend> Sign Up Information </legend>
-            <label for ="fname">
-                Name:
-              <input autofocus type="text" name="fname" required placeholder ="First Name"/>
-              </label>
-              <label for ="lname">
-                Last Name:
-                <input autofocus type="text" name="lname" required placeholder ="Last Name"/>
-              </label>
-              <label for="eMail">
-                Email:
-              <input autofocus type="email" name="eMail" required placeholder ="Email"/>
-              </label>
-              <label for="phone">
-                Phone:
-              <input autofocus type="tel" name="phone" required placeholder ="Phone Num(nnn) nnn-nnnn"/>
-              </label>
 
-              <input type="submit" value="Submit" />
-            </fieldset>
-              </form>
+<head>
+  <meta charset="utf-8">
+  <link href="../CSS/style.css" rel="stylesheet" />
+  <link href="../CSS/formstyle.css" rel="stylesheet" />
+
+  <title>Information</title>
+</head>
+
+<body>
+  <nav id="linktabs">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="info.html">Info</a></li>
+      <li><a href="classes.html">Classes</a></li>
+    </ul>
+  </nav>
+  <form id="survey" action="thankyou.html" method="get">
+    <fieldset id="custInfo">
+      <legend>Sign Up Information</legend>
+
+      <div class="row">
+        <label for="name"> Name*</label>
+        <input name="custName" id="name" type="text" placeholder="first and last name" accesskey="1" />
       </div>
 
+      <div class="row">
+        <label for="phone">Phone Number</label>
+        <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" />
+      </div>
+
+      <div class="row">
+        <label for="mail">Email*</label>
+        <input name="custEmail" id="mail" type="email" required  />
+</div>
+        <div class="row">
+          <label for="select">Best Way to Reach You</label>
+          <select id="select" name="select" >
+              <option value="email"> Email </option>
+              <option value=" phone">Phone  </option>
+            </select>
+          </div>
+            <div class="row2">
+              <h4>Select Classes</h4>
+              <input type="checkbox" id="crosstraining" value="crosstraining">
+              <label for="crosstraining">Crosstraining</label><br>
+              <input type="checkbox" id="sprint" value="sprint">
+              <label for="sprint">Sprint</label><br>
+
+              <input type="checkbox" id="spi" value="custPhone">
+              <label for="phone">Spin</label><br>
+
+              <input type="checkbox" id="mix" value="custPhone">
+              <label for="phone">MixxxedFit</label><br>
+
+              <input type="checkbox" id="aCross" value="custPhone">
+              <label for="phone">Advanced Crosstraining</label><br>
+
+              <input type="checkbox" id="zum" value="custPhone">
+              <label for="phone">Zumba</label><br>
+
+              <input type="checkbox" id="step" value="custPhone">
+              <label for="phone">Step Interval</label><br>
+
+              <input type="checkbox" id="bodyc" value="custPhone">
+              <label for="bodyp">Body Combat</label><br>
+              <input type="checkbox" id="bodyp" value="bodyp">
+              <label for="bodyp">Body Pumps</label><br>
+          </div>
+          <div id=row2>
+          <h4>Which Time Frame?</h4>
+<input type="radio" id="am" name="AM" value="AM">
+<label for="am">AM</label><br>
+<input type="radio" id="pm" name="PM" value="PM">
+<label for="pm">PM</label><br>
 
 
-  </body>
+          <button>Submit</button>
+      </div>
+    </fieldset>
+
+  </form>
+
+
+
+
+</body>
+
 </html>
